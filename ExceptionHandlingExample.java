@@ -4,10 +4,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class Divider {
-    public void performDivision(int dividend, int divisor) {
+    public void performDivision(int numerator, int denominator) {
         try {
             // try block to perform division operation
-            int quotient = dividend / divisor;
+            int quotient = numerator / denominator;
             System.out.println("Answer is : " + quotient); // prints the quotient
         } catch (ArithmeticException e) {
             // catches arithmetic exception i.e., division by zero
@@ -17,7 +17,7 @@ class Divider {
 }
 
 class ArrayIndexValueGetter {
-    public void getValueAtIndex(int arr[], int index) {
+    public void getArrayElement(int arr[], int index) {
         try {
             // try block to access array element at the given index
             int val = arr[index];
@@ -56,7 +56,7 @@ public class ExceptionHandlingExample {
         // create an array and try to get value at given index using ArrayIndexValueGetter class
         int arr[] = {10, 20, 30, 40, 50, 60, 70};
         ArrayIndexValueGetter aivg = new ArrayIndexValueGetter();
-        aivg.getValueAtIndex(arr, 7);
+        aivg.getArrayElement(arr, 7);
 
         // read a file using FileIO class
         String fileName = "sample.txt";
